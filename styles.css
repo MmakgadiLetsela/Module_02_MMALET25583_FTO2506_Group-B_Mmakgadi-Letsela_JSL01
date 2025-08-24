@@ -1,4 +1,4 @@
-/* BODY STYLES */
+/* BODY */
 
 body{
     background-color: #F4F7FD;
@@ -10,6 +10,7 @@ body{
     font-family: Plus Jakarta Sans;
     gap: .0625rem;
 }
+/* END OF BODY */
 
 /* NAV BAR */
 .sidebar{
@@ -37,6 +38,9 @@ h4{
     letter-spacing: .15rem;
     margin-left: 1rem;
 }
+.boards-heading{
+    margin-left: 2rem;
+}
 /* Button */
 button{
     background-color: #635FC7;
@@ -52,6 +56,7 @@ button:hover{
     background-color: #A8A4FF;
     cursor: pointer;
 }
+/* END OF NAV BAR */
 
 /* HEADER */
 .header{
@@ -75,15 +80,17 @@ margin: 0;
 width: 10.5625rem;
 height: 1.875rem;
 }
+/* END OF HEADER */
 
-/* TASKS COLUMNS */
+/* TASK COLUMNS */
 section{
     width: 17.5rem;
     height: auto;
 }
 .task-cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,auto);
+    gap: 1.25rem;
     padding: 1rem;
     box-sizing: border-box;
     margin: 1rem 0 0 1rem;
@@ -123,12 +130,63 @@ section{
     box-sizing: border-box;
     box-shadow: 0px 4px 6px 0px rgba(54, 78, 126, 0.1015);
     margin-bottom: 1rem;
-
 }
 h3{
     color: #000112;
     font-weight: bold;
     font-size: .9375rem;
     line-height: 1.1875rem;
+}
+/* END OF TASK COLUMNS */
 
+/* RESPONSIVE STYLES */
+/* MOBILE */
+@media (max-width: 375px){
+    body{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .logo{
+        margin: 0;
+    }
+    h4{
+        margin: 0;
+    }
+    button{
+        width: auto;
+        height: auto;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
+    .header{
+        width: 100%;
+        height: auto;
+        padding: 1rem 2rem;
+    }
+    .main-layout{
+        width: 100%;
+        height: auto;
+    }
+    .task-cards{
+        grid-template-rows: repeat(1,auto);
+        gap: 1rem;
+        margin: 1rem 2rem;
+        justify-content: center;
+    }
+    section{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .task{
+        width: 100%;
+    }
 }
