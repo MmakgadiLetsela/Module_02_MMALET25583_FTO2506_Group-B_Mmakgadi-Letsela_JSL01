@@ -34,7 +34,7 @@ h4{
     line-height: .9375rem;
     color: #828FA3;
     letter-spacing: .15rem;
-    margin-left: 2rem;
+    margin: 0;
 }
 /* Button */
 button{
@@ -76,18 +76,33 @@ height: 1.875rem;
 }
 
 /* TASKS COLUMNS */
-.tasks-grid{
+.tasks-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 1rem;
     box-sizing: border-box;
     gap: 1.5rem;
+    margin: 1rem 0 0 1rem;
 }
 .circle-1, .circle-2, .circle-3{
     width: .9375rem;
     height: .9375rem;
     }
 
-p{
-    
+.task{
+    background-color: #FFFFFF;
+    width: 17.5rem;
+    height: 3.75rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px 0px rgba(54, 78, 126, 0.1015);
+
+}
+h3{
+    color: #000112;
+    font-weight: bold;
+    font-size: .9375rem;
+    line-height: 1.1875rem;
+
 }
