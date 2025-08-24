@@ -5,6 +5,8 @@ body{
     width: 1440px;
     height: 1024px;
     margin: 0;
+}
+.container{
     display: flex;
     flex-direction: row;
     font-family: Plus Jakarta Sans;
@@ -15,7 +17,7 @@ body{
 /* NAV BAR */
 .sidebar{
     width: 18.75rem;
-    height: 100%;
+    height: 64rem;
     background-color: #FFFFFF;
     padding-top: 2rem;
 }
@@ -141,52 +143,23 @@ h3{
 
 /* RESPONSIVE STYLES */
 /* MOBILE */
-@media (max-width: 375px){
-    body{
+
+@media (max-width: 768px){
+    .container{
         flex-direction: column;
-        width: 100%;
-        height: auto;
     }
-    .sidebar{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-    }
-    .logo{
-        margin: 0;
-    }
-    h4{
-        margin: 0;
-    }
-    button{
-        width: auto;
-        height: auto;
-        padding: .5rem 1rem;
-        border-radius: .5rem;
-    }
-    .header{
-        width: 100%;
-        height: auto;
-        padding: 1rem 2rem;
-    }
-    .main-layout{
-        width: 100%;
-        height: auto;
-    }
-    .task-cards{
-        grid-template-rows: repeat(1,auto);
-        gap: 1rem;
-        margin: 1rem 2rem;
-        justify-content: center;
-    }
-    section{
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    .task{
-        width: 100%;
-    }
+}
+.sidebar{
+    width: 100%;
+    height: auto;
+}
+h2{
+    width: auto;
+}
+.task-cards{
+    grid-template-columns: 1fr;
+}
+.task{
+    width: 20rem;
+
 }

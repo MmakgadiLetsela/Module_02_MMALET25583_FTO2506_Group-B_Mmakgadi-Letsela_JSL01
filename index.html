@@ -7,75 +7,77 @@
   </head>
 
   <body>
+    <div class="container">
     <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
-    <nav class="sidebar">
-      <div class="logo">
-        <img class="logo-img" src="assets/logo-light.svg" alt="Logo"/>
-      </div>
-      <div class="board-links">
-        <h4 class="boards-heading">ALL BOARDS (1)</h4>
-        <button>Launch Career</button>
-      </div>
-    </nav>
+      <nav class="sidebar">
+        <div class="logo">
+          <img class="logo-img" src="assets/logo-light.svg" alt="Logo"/>
+        </div>
+        <div class="board-links">
+          <h4 class="boards-heading">ALL BOARDS (1)</h4>
+          <button>Launch Career</button>
+        </div>
+      </nav>
 
-    <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
-    <div class="main-layout">
-      <header class="header">
-        <h2>Launch Career</h2>
-      </header>
+      <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
+      <div class="main-layout">
+        <header class="header">
+          <h2>Launch Career</h2>
+        </header>
 
-      <main class="task-cards">
-          <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-        <section class="TODO">
-          <div class="header-TODO">
-            <span class="circle-1"></span>
-            <h4>TODO</h4>
-          </div>
-          <div class="Tasks-TODO">
-            <div class="task">
-              <h3>Launch Epic Career 🚀</h3>
+        <main class="task-cards">
+            <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
+          <section class="TODO">
+            <div class="header-TODO">
+              <span class="circle-1"></span>
+              <h4>TODO</h4>
             </div>
-            <div class="task">
-              <h3>Conquer React</h3>
+            <div class="Tasks-TODO">
+              <div class="task">
+                <h3>Launch Epic Career 🚀</h3>
+              </div>
+              <div class="task">
+                <h3>Conquer React</h3>
+              </div>
+              <div class="task">
+                <h3>Understand Databases</h3>
+              </div>
+              <div class="task">
+                <h3>Crush Frameworks</h3>
+              </div>
             </div>
-            <div class="task">
-              <h3>Understand Databases</h3>
+          </section>
+          <section class="DOING">
+            <div class="header-DOING">
+              <span class="circle-2"></span>
+              <h4>DOING</h4>
             </div>
-            <div class="task">
-              <h3>Crush Frameworks</h3>
+              <!-- Tasks container for DOING -->
+            <div class="Tasks-DOING">
+              <div class="task">
+                <h3>Master JavaScript 💛</h3>
+              </div>
+              <div class="task">
+                <h3>Never Give Up 🏆</h3>
+              </div>
+          </section>
+          <section class="DONE">
+            <div class="header-DONE">
+              <span class="circle-3"></span>
+              <h4>DONE</h4>
             </div>
-          </div>
-        </section>
-        <section class="DOING">
-          <div class="header-DOING">
-            <span class="circle-2"></span>
-            <h4>DOING</h4>
-          </div>
-            <!-- Tasks container for DOING -->
-          <div class="Tasks-DOING">
-            <div class="task">
-              <h3>Master JavaScript 💛</h3>
+              <!-- Tasks container for DONE -->
+            <div class="Tasks-DONE">
+              <div class="task">
+                <h3>Explore ES6 Features 🌐</h3>
+              </div>
+              <div class="task">
+                <h3>Have Fun 🛠️</h3>
+              </div>
             </div>
-            <div class="task">
-              <h3>Never Give Up 🏆</h3>
-            </div>
-        </section>
-        <section class="DONE">
-          <div class="header-DONE">
-            <span class="circle-3"></span>
-            <h4>DONE</h4>
-          </div>
-            <!-- Tasks container for DONE -->
-          <div class="Tasks-DONE">
-            <div class="task">
-              <h3>Explore ES6 Features 🌐</h3>
-            </div>
-            <div class="task">
-              <h3>Have Fun 🛠️</h3>
-            </div>
-          </div>
-        </section>
-      </main>
+          </section>
+        </main>
+      </div>
     </div>
   </body>
 </html>
