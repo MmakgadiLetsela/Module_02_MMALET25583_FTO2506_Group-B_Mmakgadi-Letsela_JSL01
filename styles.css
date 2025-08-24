@@ -1,0 +1,26 @@
+/* Body styles */
+
+body{
+    background-color: #F4F7FD;
+    width: 1440px;
+    height: 1024px;
+    margin: 0;
+}
+
+/* Nav Bar */
+.sidebar{
+    width: 18.75rem;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.logo{
+    width: 9.5331rem;
+    height: 1.5762rem;
+    margin: 0 0 0 2.125rem;
+}
+.logo-img{
+    width: 100%;
+    height: 100%;
+
+}
