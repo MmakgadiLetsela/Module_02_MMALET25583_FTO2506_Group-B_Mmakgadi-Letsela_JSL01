@@ -7,20 +7,43 @@ body{
     margin: 0;
 }
 
-/* Nav Bar */
+/* NAV BAR */
 .sidebar{
     width: 18.75rem;
     height: 100%;
     background-color: #FFFFFF;
+    padding-top: 2rem;
 }
-
+/* Logo */
 .logo{
     width: 9.5331rem;
     height: 1.5762rem;
-    margin: 0 0 0 2.125rem;
+    margin: 0 0 0 2rem;
 }
 .logo-img{
     width: 100%;
     height: 100%;
-
+}
+/* Board Links */
+h4{
+    font-family: Plus Jakarta Sans;
+    font-size: .75rem;
+    font-weight: bold;
+    line-height: .9375rem;
+    color: #828FA3;
+    letter-spacing: .15rem;
+    margin-left: 2rem;
+}
+button{
+    background-color: #635FC7;
+    color: #FFFFFF;
+    width: 17.25rem;
+    height: 3rem;
+    border-top-right-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    border: none;
+}
+button:hover{
+    background-color: #A8A4FF;
+    cursor: pointer;
 }
