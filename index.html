@@ -19,19 +19,16 @@
     </nav>
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
-    <div>
-      <header>
-        <div>
-          <h2>Launch Career</h2>
-        </div>
+    <div class="main-layout">
+      <header class="header">
+        <h2>Launch Career</h2>
       </header>
 
-      <div>
-        <main>
+      <main class="tasks-grid">
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-          <div>
+          <section class="TODO">
             <div>
-              <span></span>
+              <span> </span>
               <h4>TODO</h4>
             </div>
             <!-- Tasks container for TODO -->
@@ -39,9 +36,9 @@
               <div>Launch Epic Career 🚀</div>
               <div>Learn Data Structures and Algorithms 📚</div>
             </div>
-          </div>
+          </section>
           <!-- DOING Column -->
-          <div>
+          <section class="DOING">
             <div>
               <span></span>
               <h4>DOING</h4>
@@ -51,9 +48,9 @@
               <div>Master JavaScript 💛</div>
               <div>Keep on Going 🏆</div>
             </div>
-          </div>
+          </section>
           <!-- DONE Column -->
-          <div>
+          <section class="DONE">
             <div>
               <span></span>
               <h4>DONE</h4>
@@ -63,9 +60,8 @@
               <div>Contribute to Open Source Projects 🌐</div>
               <div>Build Portfolio Projects 🛠️</div>
             </div>
-          </div>
-        </main>
-      </div>
+          </section>
+      </main>
     </div>
   </body>
 </html>

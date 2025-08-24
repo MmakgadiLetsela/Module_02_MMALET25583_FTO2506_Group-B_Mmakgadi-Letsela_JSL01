@@ -5,6 +5,9 @@ body{
     width: 1440px;
     height: 1024px;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: Plus Jakarta Sans;
 }
 
 /* NAV BAR */
@@ -26,7 +29,6 @@ body{
 }
 /* Board Links */
 h4{
-    font-family: Plus Jakarta Sans;
     font-size: .75rem;
     font-weight: bold;
     line-height: .9375rem;
@@ -42,8 +44,32 @@ button{
     border-top-right-radius: 6.25rem;
     border-bottom-right-radius: 6.25rem;
     border: none;
+    padding: 0;
 }
 button:hover{
     background-color: #A8A4FF;
     cursor: pointer;
+}
+
+/* HEADER */
+.header{
+    width: 71.25rem;
+    height: 6.0625rem;
+    background-color: #FFFFFF;
+    padding-top: 1.8125rem;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+}
+.main-layout{
+    width: 71.25rem;
+    height: 100%;
+}
+h2{
+font-weight: bold;
+font-size: 1.125rem;
+line-height: 1.4375rem;
+color: #000112;
+margin: 0;
+width: 10.5625rem;
+height: 1.875rem;
 }
